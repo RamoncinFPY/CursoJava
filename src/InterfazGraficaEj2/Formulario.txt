@@ -1,0 +1,30 @@
+//Librería para la interfaz gráfica.
+import javax.swing.*;
+
+//extends del objeto JFrame
+public class FormularioInput extends JFrame{
+ 
+ //Se crea el constructor
+ public FormularioInput(){
+
+  //Para poder indicarle la posición
+  setLayout(null); 
+ }
+
+
+ public static void main(String args[]){
+   FormularioInput formulario1 = new FormularioInput();
+
+   //Coordenadas y dimensiones (x,y,ancho,alto)
+   formulario1.setBounds(0,0,400,550);
+
+   //Para que sea visible, sino poner false para ocultar
+   formulario1.setVisible(true);
+
+   //Para que se posicione en la mitad de la pantalla
+   formulario1.setLocationRelativeTo(null);
+
+   //Para que no se pueda redimensionar
+   formulario1.setResizable(false);
+ }
+}
