@@ -4,7 +4,7 @@ public class OperacionesBasicas {
     private int numero1;
     private int numero2;
     private String opcion;
-    private int total;
+    private double total;
 
     public OperacionesBasicas() {
     }
@@ -30,7 +30,7 @@ public class OperacionesBasicas {
         this.numero2 = numero2;
     }
 
-    public int calculo(){
+    public double calculo(){
         OperacionesBasicasInterfaz calcular = new OperacionesBasicasInterfaz();
         numero1 = calcular.ingresaNum1();
         numero2 =calcular.ingresaNum2();
@@ -50,7 +50,7 @@ public class OperacionesBasicas {
     @Override
     public String toString() {
         OperacionesBasicasInterfaz calcular = new OperacionesBasicasInterfaz();
-
+        calculo();
         String imprimir = "OperacionesBasicas:" +
                           "\n " + numero1 + "  " +opcion+ " " + numero2 +
                           "\nResultado = " + total;
