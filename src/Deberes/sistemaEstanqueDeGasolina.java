@@ -2,7 +2,7 @@ package Deberes;
 
 import java.util.Scanner;
 
-public class sistemaEstanqueDeGasolina {
+public class SistemaEstanqueDeGasolina {
     public static void main(String[] args) {
         double capacidad = 70.0D;
         double medida;
