@@ -6,6 +6,10 @@ public class PersonaMayorEdad {
     //Estos son los constructores, con y sin parámetros.
     public PersonaMayorEdad() {
     }
+    public PersonaMayorEdad(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
 
     //Estos son los setters y getters
     public String getNombre() {
@@ -31,6 +35,7 @@ public class PersonaMayorEdad {
         PersonaMayorEdadInterfaz entrada = new PersonaMayorEdadInterfaz();
         nombre = entrada.ingresaNombre();
         edad = entrada.ingresaEdad();
+        new PersonaMayorEdad(nombre,edad);
         String resultado = (edad > 18) ? "Es mayor de edad." : "You are a baby!";
         String imprimirDatos = "La persona:" +
                                 "\nNombre= " + nombre +
