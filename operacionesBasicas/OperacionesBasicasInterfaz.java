@@ -3,13 +3,8 @@ package operacionesBasicas;
 import javax.swing.*;
 
 public class OperacionesBasicasInterfaz extends OperacionesBasicas {
-    public String opcion;
-
+   
     public OperacionesBasicasInterfaz() {
-    }
-
-    public OperacionesBasicasInterfaz(String opcion) {
-        this.opcion = opcion;
     }
 
     public int ingresaNum1(){
