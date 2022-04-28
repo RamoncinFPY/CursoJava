@@ -2,7 +2,7 @@ package Deberes;
 
 import javax.swing.*;
 
-public class nombreMasLargo {
+public class NombreMasLargo {
     public static void main(String[] args) {
 
         String nombre1 = JOptionPane.showInputDialog("Ingrese su nombre y apellido:");
