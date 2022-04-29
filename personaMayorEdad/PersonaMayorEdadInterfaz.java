@@ -28,8 +28,10 @@ public class PersonaMayorEdadInterfaz extends PersonaMayorEdad{
 
     //Solicito la entrada de los datos.
     public String ingresaNombre() {
-        String nombre = JOptionPane.showInputDialog("Ingrese su nombre:");
-        while (nombre == null || nombre.isEmpty() || nombre.isBlank()) {
+        String nombre = JOptionPane.showInputDialog("Ingrese su nombre:").trim();
+        //Le indico la expresión regular que necesito.
+        String s = String.valueOf("[0-9]");
+        while (nombre == null || nombre.isEmpty() || nombre.isBlank() || nombre.matches(s)) {
             nombre = JOptionPane.showInputDialog(null,
                     "Nombre introducido erróneo!. \n" +
                             "Por favor, ingrese su nombre:");
