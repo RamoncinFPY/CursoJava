@@ -54,7 +54,7 @@ public class PersonaMayorEdadInterfaz extends PersonaMayorEdad{
                             "Por favor, ingrese su edad:");
         }
         int edad = Integer.parseInt(edadStr);
-        return edad;
+        return Math.abs(edad);
     }
 
     public void mostrarSalida(String i){
