@@ -1,6 +1,8 @@
 package personaMayorEdad;
 
 import javax.swing.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class PersonaMayorEdadInterfaz extends PersonaMayorEdad{
 
@@ -26,19 +28,22 @@ public class PersonaMayorEdadInterfaz extends PersonaMayorEdad{
         return super.getEdad();
     }
 
+   //Método para que el usuario sólo ingrese letras.
+    public static boolean sonLetras(String n){
+        return n.matches("[a-zA-Z]*");
+    }
     //Solicito la entrada de los datos.
     public String ingresaNombre() {
         String nombre = JOptionPane.showInputDialog("Ingrese su nombre:").trim();
-        //Le indico la expresión regular que necesito.
-        String s = String.valueOf("[0-9]");
-        while (nombre == null || nombre.isEmpty() || nombre.isBlank() || nombre.matches(s)) {
+
+        while ((nombre == null) || nombre.isEmpty() || nombre.isBlank() || !sonLetras(nombre)) {
             nombre = JOptionPane.showInputDialog(null,
                     "Nombre introducido erróneo!. \n" +
                             "Por favor, ingrese su nombre:");
         }
         return nombre;
     }
-
+    //Método para que el usuario sólo ingrese números.
     private static boolean esNumero(String n) {
         try {
             Integer.parseInt(n);
@@ -50,13 +55,14 @@ public class PersonaMayorEdadInterfaz extends PersonaMayorEdad{
 
     public int ingresaEdad() {
         String edadStr = JOptionPane.showInputDialog(null,"Ingrese su edad:");
-        while (!esNumero(edadStr)) {
+        while (!esNumero(edadStr) || edadStr.contains("-")) {
             edadStr = JOptionPane.showInputDialog(null,
                     "Edad introducida errónea!. \n" +
                             "Por favor, ingrese su edad:");
         }
+
         int edad = Integer.parseInt(edadStr);
-        return Math.abs(edad);
+        return edad;
     }
 
     public void mostrarSalida(String i){
