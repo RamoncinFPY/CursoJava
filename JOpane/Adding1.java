@@ -1,4 +1,4 @@
-package Deberes;
+package JOpane;
 import javax.swing.JOptionPane;
 
 public class Adding1 {

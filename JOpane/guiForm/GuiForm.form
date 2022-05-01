@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="JOpane.guiForm.GuiForm">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="15" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="1263" height="400"/>
+    </constraints>
+    <properties>
+      <font name="Consolas" size="20" style="2"/>
+      <foreground color="-7838713"/>
+    </properties>
+    <border type="bevel-lowered" title="Matemáticas Básicas" title-justification="2">
+      <font/>
+      <title-color color="-7838713"/>
+    </border>
+    <children>
+      <component id="5e56f" class="javax.swing.JLabel" binding="numero1Label">
+        <constraints/>
+        <properties>
+          <font name="Consolas" size="14" style="1"/>
+          <text value="Número 1"/>
+        </properties>
+      </component>
+      <component id="28194" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints/>
+        <properties>
+          <columns value="30"/>
+          <font name="Consolas" size="16" style="1"/>
+          <horizontalAlignment value="10"/>
+        </properties>
+      </component>
+      <component id="50716" class="javax.swing.JLabel" binding="numero2Label">
+        <constraints/>
+        <properties>
+          <font name="Consolas" size="14" style="1"/>
+          <text value="Número 2"/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <component id="85928" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints/>
+        <properties>
+          <columns value="30"/>
+          <font name="Consolas" size="16" style="1"/>
+        </properties>
+      </component>
+      <component id="4f616" class="javax.swing.JButton" binding="sumarButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Sumar"/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <component id="a0aac" class="javax.swing.JButton" binding="restarButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Restar"/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <component id="e3b78" class="javax.swing.JButton" binding="multiplicarButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Multiplicar"/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <component id="4ec3f" class="javax.swing.JButton" binding="dividirButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Dividir"/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <component id="5c50b" class="javax.swing.JButton" binding="raízCuadradaButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Raíz Cuadrada"/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <component id="8ded" class="javax.swing.JButton" binding="exponenteButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Exponente"/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <component id="efa33" class="javax.swing.JLabel" binding="resultadoLabel">
+        <constraints/>
+        <properties>
+          <text value="Resultado"/>
+        </properties>
+      </component>
+      <component id="6c166" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+        <constraints/>
+        <properties>
+          <columns value="30"/>
+          <font name="Consolas" size="16" style="1"/>
+        </properties>
+      </component>
+      <component id="37a4b" class="javax.swing.JLabel" binding="autorLabel">
+        <constraints/>
+        <properties>
+          <background color="-1"/>
+          <font name="Consolas" size="16" style="2"/>
+          <foreground color="-7838713"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="By Ramón"/>
+          <verticalAlignment value="3"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
