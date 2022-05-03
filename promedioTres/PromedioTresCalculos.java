@@ -9,13 +9,16 @@ public class PromedioTresCalculos extends PromedioTres{
     PromedioTresInterfaz pti = new PromedioTresInterfaz();
 
     //Constructor
-    public PromedioTresCalculos() {    }
-
-    //Métodos para calcular el total y el promedio y la salida, aprovecho para settear y gettear los atributos de la clase principal.
-    public double totalTres(){
+    public PromedioTresCalculos() {
         pt.setNumero1(pti.ingresaNumeros());
         pt.setNumero2(pti.ingresaNumeros());
         pt.setNumero3(pti.ingresaNumeros());
+        totalTres();
+        promedioTres();
+    }
+
+    //Métodos para calcular el total y el promedio y la salida, aprovecho para settear y gettear los atributos de la clase principal.
+    public double totalTres(){
         t3 = pt.getNumero1() + pt.getNumero2() + pt.getNumero3();
         pt.setTotal(t3);
         return t3;
