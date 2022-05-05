@@ -2,15 +2,19 @@ package ficheros3;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Fichero3Comparar {
     //Instancias de mis dos clases.
     Fichero3 f1 = new Fichero3();
     Fichero3Interfaz f1i = new Fichero3Interfaz();
 
+    //Constructor
     public Fichero3Comparar() {
         String fraseIngresada = leerFrase();
-        leerFichero(fraseIngresada);
+        String fraseFichero   = leerFichero(fraseIngresada);
+        escribirFichero(fraseFichero);
     }
 
     //Método para solicitar al usuario que ingrese la palabra o frase.
@@ -28,6 +32,7 @@ public class Fichero3Comparar {
         String resultado = "";
         char[] resultadoVocales;
         int contarVocales = 0;
+        String salidaAlFichero = null;
 
         //Se prueba si el fichero existe y si tiene contenido.
         try {
@@ -46,7 +51,10 @@ public class Fichero3Comparar {
 
                 }
                 //Muestro el contenido y el resultado.
-                f1i.mostrarSalida("\nFrase fichero = " + lectura + "\nPalabra ingresada = " + s + "\nCOMPARACIÓN = " + resultado + "\n\tLa frase del fichero contiene " + contarVocales + "Vocales.");
+                f1i.mostrarSalida("\nFrase fichero = " + lectura + "\nPalabra ingresada = " +
+                        s + "\nCOMPARACIÓN = " + resultado + "\n\tLa frase del fichero contiene " +
+                        contarVocales + " vocales.");
+                salidaAlFichero = lectura + " tiene " + contarVocales + " vocales.";
             }
 
             //Se recoge el error si lo hubiere.
@@ -63,6 +71,31 @@ public class Fichero3Comparar {
                 e2.printStackTrace();
             }
         }
-        return resultado;
+        return salidaAlFichero;
+    }
+
+    //Método para escribir en el fichero de salida,
+    public String escribirFichero(String w) {
+        //PARA ESCRIBIR UN FICHERO.
+        FileWriter fw = null;
+        try {//Modo escritura sobreescribe cada vez que se usa.
+            fw = new FileWriter(f1.getRutaSalida());// Hay que poner <, true> para añadir texto modo append().
+            fw.write(w + "\n");
+            fw.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Error = " + e);
+
+        }finally {
+            try {
+                if (null != fw) {
+                    fw.close();
+                }
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
+        }
+        return w;
     }
 }
