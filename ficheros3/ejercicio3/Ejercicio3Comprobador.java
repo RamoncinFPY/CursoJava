@@ -16,7 +16,7 @@ public class Ejercicio3Comprobador {
         return s;
     }
 
-    //PARA LEER FICHEROS.
+    //Para comprobar cuantas vocales y caracteres tiene la frase
     public String contarVocalesCaracteres(String s, String nombreArchivo) {
 
         String lectura = null;
@@ -47,7 +47,7 @@ public class Ejercicio3Comprobador {
                               "\nPalabra ingresada = [" + s + "] " + caracteresPalabra +
                               "\nCOMPARACIÓN = " + resultado);
 
-        salidaAlFichero = "La  del fichero " + lectura + " tiene " + contarVocales + " vocales.";
+        salidaAlFichero = "Frase del fichero leida: " + lectura + "tiene " + contarVocales + " vocales.";
         return salidaAlFichero;
     }
 }
