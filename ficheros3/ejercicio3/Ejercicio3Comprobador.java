@@ -43,7 +43,7 @@ public class Ejercicio3Comprobador {
         String caracteresPalabra = (contadorLetrasFrase > 40) ? "tiene más de 40 caracteres" : "tiene " + contadorLetrasPalabra +" caracteres, está dentro del rango de 40 caracteres.";
 
         //Muestro el contenido y el resultado.
-        f1i.mostrarSalida("\nFrase fichero = " + lectura +  "tiene " + contarVocales + " vocales y " + caracteresFichero +
+        f1i.mostrarSalida("\nFrase fichero = " + lectura +  "\nTiene " + contarVocales + " vocales y " + caracteresFichero +
                               "\nPalabra ingresada = [" + s + "] " + caracteresPalabra +
                               "\nCOMPARACIÓN = " + resultado);
 
