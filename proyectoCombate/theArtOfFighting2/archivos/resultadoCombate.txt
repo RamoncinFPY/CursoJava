@@ -1,0 +1,5 @@
+	The Art Of Fighting
+Guerrero{id=1, nombre='OSESNO', tipo='os', fuerza=0, vida=0}
+Guerrero{id=2, nombre='FISH', tipo='agua', fuerza=50, vida=30}
+RESULTADO DEL COMBATE:
+Ganador guerrero2: FISH con 30 de vida.

@@ -1,0 +1,15 @@
+Guerrero{id=1, nombre='A', tipo='1', fuerza=23, vida=45}
+Guerrero{id=1, nombre='C', tipo='5', fuerza=67, vida=67}
+Guerrero{id=1, nombre='Z', tipo='z', fuerza=50, vida=50}
+Guerrero{id=1, nombre='TOR', tipo='tor', fuerza=80, vida=80}
+Guerrero{id=1, nombre='YU', tipo='yu', fuerza=43, vida=43}
+Guerrero{id=1, nombre='QA', tipo='qa', fuerza=34, vida=34}
+Guerrero{id=1, nombre='GT', tipo='gt', fuerza=60, vida=60}
+Guerrero{id=1, nombre='HN', tipo='hn', fuerza=50, vida=50}
+Guerrero{id=1, nombre='PLANTA', tipo='tierra', fuerza=50, vida=50}
+Guerrero{id=1, nombre='PANDA', tipo='montes', fuerza=40, vida=40}
+Guerrero{id=1, nombre='OSO', tipo='bosque', fuerza=100, vida=100}
+Guerrero{id=1, nombre='OSITO', tipo='selva', fuerza=100, vida=100}
+Guerrero{id=1, nombre='OSO', tipo='oso', fuerza=100, vida=100}
+Guerrero{id=1, nombre='OSO', tipo='os', fuerza=100, vida=100}
+Guerrero{id=1, nombre='OSESNO', tipo='os', fuerza=50, vida=50}

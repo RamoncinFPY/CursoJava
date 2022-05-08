@@ -1,0 +1,15 @@
+Guerrero{id=2, nombre='B', tipo='3', fuerza=34, vida=56}
+Guerrero{id=2, nombre='D', tipo='78', fuerza=57, vida=56}
+Guerrero{id=2, nombre='Ñ', tipo='ñ', fuerza=100, vida=100}
+Guerrero{id=2, nombre='MAZ', tipo='maz', fuerza=50, vida=50}
+Guerrero{id=2, nombre='BN', tipo='bn', fuerza=45, vida=45}
+Guerrero{id=2, nombre='VF', tipo='vf', fuerza=25, vida=25}
+Guerrero{id=2, nombre='UJ', tipo='uj', fuerza=65, vida=65}
+Guerrero{id=2, nombre='KJ', tipo='kj', fuerza=60, vida=60}
+Guerrero{id=2, nombre='PEZ', tipo='agua', fuerza=60, vida=50}
+Guerrero{id=2, nombre='PEZ', tipo='agua', fuerza=40, vida=40}
+Guerrero{id=2, nombre='FISH', tipo='aqua', fuerza=50, vida=50}
+Guerrero{id=2, nombre='PESCHE', tipo='aqua', fuerza=50, vida=50}
+Guerrero{id=2, nombre='PEZ', tipo='pez', fuerza=50, vida=50}
+Guerrero{id=2, nombre='PEZ', tipo='pe', fuerza=50, vida=50}
+Guerrero{id=2, nombre='FISH', tipo='agua', fuerza=50, vida=50}
